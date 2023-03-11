@@ -1,13 +1,8 @@
 ---
 title: Zhuohan Loong 龙卓涵
 role: Undergraduate Student from TongJi University
-avatar_filename: 微信图片_202303101753291.jpg
-bio: My research interests include distributed robotics, mobile computing and
-  programmable matter.
-interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+avatar_filename: avatar.jpg
+# bio: My research interests include distributed robotics, mobile computing and programmable matter.
 social:
   - icon: envelope
     icon_pack: fas
@@ -33,10 +28,10 @@ education:
       year: 2017
 superuser: true
 status:
-  icon: ☕️
-last_name: Wu
+  icon: fire
+last_name: Long
 highlight_name: true
-first_name: Alice
+first_name: Zhuohan
 email: ""
 ---
 I am an undergraduate student in the School of Software Engineering(SSE), Tongji University. I am not a classic software engineering student that major in producing a software. Actually, I am more like a student majoring in AI. I have tried some projects which focuses on AI's application  during my undergraduate student time, including NLP, Time Series, Reinforcement Learing. You can see more details in the projects part.
