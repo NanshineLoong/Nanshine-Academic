@@ -12,10 +12,10 @@ social:
   - icon: envelope
     icon_pack: fas
     link: /#contact
-  - icon: twitter
+  - icon: weixin
     icon_pack: fab
     link: https://twitter.com/GeorgeCushen
-    label: Follow me on Twitter
+    label: ""
     display:
       header: true
   - icon: graduation-cap
@@ -52,6 +52,4 @@ highlight_name: true
 first_name: Alice
 email: ""
 ---
-
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-{style="text-align: justify;"}
+I am an undergraduate student in the School of Software Engineering(SSE), Tongji University. I am not a classic software engineering student that major in producing a software. Actually, I am more like a student majoring in AI. I have tried some projects which focusing on AI's application  during my undergraduate student time, including NLP, Time Series, Reinforcement Learing. You can see more details in the projects part.
