@@ -12,12 +12,6 @@ social:
   - icon: envelope
     icon_pack: fas
     link: /#contact
-  - icon: weixin
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-    label: ""
-    display:
-      header: true
   - icon: github
     icon_pack: fab
     link: https://github.com/NanshineLoong
@@ -45,4 +39,4 @@ highlight_name: true
 first_name: Alice
 email: ""
 ---
-I am an undergraduate student in the School of Software Engineering(SSE), Tongji University. I am not a classic software engineering student that major in producing a software. Actually, I am more like a student majoring in AI. I have tried some projects which focusing on AI's application  during my undergraduate student time, including NLP, Time Series, Reinforcement Learing. You can see more details in the projects part.
+I am an undergraduate student in the School of Software Engineering(SSE), Tongji University. I am not a classic software engineering student that major in producing a software. Actually, I am more like a student majoring in AI. I have tried some projects which focuses on AI's application  during my undergraduate student time, including NLP, Time Series, Reinforcement Learing. You can see more details in the projects part.
