@@ -1,7 +1,7 @@
 ---
 title: Zhuohan Loong 龙卓涵
 role: Undergraduate Student from TongJi University
-avatar_filename: avatar.jpg
+avatar_filename: avatar_clip.jpg
 social:
   - icon: envelope
     icon_pack: fas
