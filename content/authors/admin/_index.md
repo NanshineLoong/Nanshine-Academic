@@ -1,7 +1,7 @@
 ---
 title: Zhuohan Loong 龙卓涵
 role: Undergraduate Student from TongJi University
-avatar_filename: avatar.jpg
+avatar_filename: avatar2.jpg
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.
 social:
   - icon: envelope
@@ -28,7 +28,7 @@ education:
       year: 2017
 superuser: true
 status:
-  icon: fire
+  icon: 😉
 last_name: Long
 highlight_name: true
 first_name: Zhuohan
