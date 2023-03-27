@@ -12,10 +12,16 @@ summary: >-
   **关键词：**ADAS；风险评估；个性化；RLHF；计算机视觉
 draft: false
 featured: false
+authors:
+  - Zhuohan
+tags:
+  - DeepLearning
 image:
-  filename: featured
+  filename: 项目总体框架.png
   focal_point: Smart
   preview_only: false
+  caption: "caption "
+  alt_text: 可自适应拟合个体偏好的驾驶风险评估模型
 ---
 * motivation
 
