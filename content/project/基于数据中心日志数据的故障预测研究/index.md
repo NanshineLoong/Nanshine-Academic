@@ -53,7 +53,7 @@ $$\
 D ( \rho , t \_ { j } ) = \sum \_ { k = 1 } ^ { h - \rho } ( C \_ { \xi } ^ { k } ( t \_ { j } ) - C \_ { \xi } ^ { k + \rho } ( t \_ { j } ) ) ^ { 2 }(2)\
 $$
 
-其中$\rho \in { hour, day, week, month }$，是由领域知识确定的一系列可能的周期值；$\mathrm{C}^{k}_{\xi}\left(t_j\right)$指第k个time bin中模板$t_j$的出现次数（由上面frequency特征计算的结果获得）；
+其中$\rho \in \{ hour, day, week, month\}$，是由领域知识确定的一系列可能的周期值；$\mathrm{C}^{k}_{\xi}\left(t_j\right)$指第k个time bin中模板$t_j$的出现次数（由上面frequency特征计算的结果获得）；
 sequency特征是使用**双重LCS算法**，先对所有**有故障的time bin两两之间做LCS**，把所有LCS的结果序列构成一个集合。然后对所有time bin，逐个将之与故障集合中左右的序列再做一次**基于LCS的相似度计算**，以**相似度结果**作为这个time bin的特征取指，体现它与故障time bin之间的相似性；
 surge特征则是对每一个time bin以2秒为间隔做切分，对每一个分块内的每一种模板计算出现次数，再用**奇异谱变换方法**，以模板的频率序列为输入，输出一个该模板的得分。
 所有模板的得分拼接起来作为一个该特征的向量。上述四个特征对应的向量或数值拼接起来组成的长向量（达五百多维）即作为该time bin的特征表示。
@@ -68,9 +68,7 @@ surge特征则是对每一个time bin以2秒为间隔做切分，对每一个分
 
 最终复现结果为：
 <div style="text-align:center;">
-  
-## 复现结果
-  
+
 | Method | Precision | Recall | F1    |
 | ------ | --------- | ------ | ----- |
 | 原论文结果  | 0.874     | 0.744  | 0.803 |
@@ -83,4 +81,4 @@ surge特征则是对每一个time bin以2秒为间隔做切分，对每一个分
 
 
 <h3 style="text-align:center;">Acknowledgments</h3>
-感谢石晓楠学姐和吴嘉琦学长给我们的指导！
+感谢石晓楠学姐和吴嘉琦学长在我们论文复现过程中给我们的帮助和指导！
