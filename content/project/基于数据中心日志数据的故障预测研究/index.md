@@ -12,6 +12,7 @@ authors:
   - Zhuohan Long
 tags:
   - TimeSeries
+  - MachineLearning
 image:
   filename: 日志特征提取.png
   focal_point: Smart
@@ -67,12 +68,11 @@ surge特征则是对每一个time bin以2秒为间隔做切分，对每一个分
 在本项目中，我主要负责代码框架的搭建（主要参考[这篇教程](https://github.com/chenyuntc/pytorch-book/blob/master/chapter06-best_practice/PyTorch%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97.md)）、序列拆分和seasonality特征提取的代码实现。
 
 最终复现结果为：
-<div style="text-align:center;">
+
 | Method | Precision | Recall | F1    |
 | ------ | --------- | ------ | ----- |
 | 原论文结果  | 0.874     | 0.744  | 0.803 |
 | 复现结果   | 0.873     | 0.575  | 0.683 |
-</div>
 
 <h3 style="text-align:center;">Acknowledgments</h3>
 感谢石晓楠学姐和吴嘉琦学长在我们论文复现过程中给我们的帮助和指导！
