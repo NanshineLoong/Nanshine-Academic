@@ -13,7 +13,7 @@ authors:
 tags:
   - TimeSeries
 image:
-  filename: skeleton.png
+  filename: 日志特征提取.png
   focal_point: Smart
   preview_only: false
 ---
@@ -30,7 +30,8 @@ image:
 在做项目前还阅读了一些用transformer解决时间序列问题的英文论文，在阅读时我仅在单词级别查询翻译，虽然读的速度很慢，但能感觉到自己英语阅读能力的提高。养成习惯以后英语六级的阅读差不多可以秒杀了~
 
 <h2 style="text-align:center;">Methodology</h2>
-这篇论文中最关键的部分是**对日志时间序列的处理**，而模型部分只是使用**随机森林**，比较简单。
+
+这篇论文中最关键的部分是 **对日志时间序列的处理** ，而模型部分只是使用 **随机森林** ，比较简单。
 
 第一步是对**日志文本的处理**，文中使用**FT-tree**这种日志解析方法来从非结构化的日志文本中提取出统一的模板，再对模板做**序号编码**，以序号作为模板的表示。于是可以将按时间顺序排列的日志序列转换成一个序号序列。
 
@@ -67,15 +68,19 @@ surge特征则是对每一个time bin以2秒为间隔做切分，对每一个分
 
 最终复现结果为：
 <div style="text-align:center;">
+  
 ## 复现结果
+  
 | Method | Precision | Recall | F1    |
 | ------ | --------- | ------ | ----- |
 | 原论文结果  | 0.874     | 0.744  | 0.803 |
 | 复现结果   | 0.873     | 0.575  | 0.683 |
+  
 </div>
 
 <h2 style="text-align:center;">Summary</h2>
 读代码与自己写代码完全是两回事。读代码可能只需要用十几分钟看看输入输出和中间的几个关键操作就能大概了解一段代码的功能。而当真正需要自己来写这样的代码时，可能需要整整一天。
 
-<h4 style="text-align:center;">Acknowledgments</h4>
+
+<h3 style="text-align:center;">Acknowledgments</h3>
 感谢石晓楠学姐和吴嘉琦学长给我们的指导！
