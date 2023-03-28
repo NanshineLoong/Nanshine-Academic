@@ -31,9 +31,9 @@ sections:
         - name: All
           tag: '*'
         - name: Deep Learning
-          tag: Deep Learning
+          tag: DeepLearning
         - name: Other
-          tag: Demo
+          tag: Innovation
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
@@ -51,7 +51,7 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
+        Please feel free to contact me if you have any questions, or even if you just want to make a friend~
       # Contact (add or remove contact options as necessary)
       email: 2053495@tongji.edu.cn
       phone: 155 7438 3908
