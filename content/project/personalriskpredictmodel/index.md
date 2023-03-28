@@ -15,6 +15,7 @@ authors:
   - Zhuohan
 tags:
   - DeepLearning
+  - ReinforcementLearning
 image:
   filename: 项目总体框架.png
   focal_point: Smart
