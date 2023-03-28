@@ -62,7 +62,7 @@ surge特征则是对每一个time bin以2秒为间隔做切分，对每一个分
 
 ![项目总体框架图](项目总体框架图.png "项目总体框架图")
 
-* 个人任务与最终结果
+<h3 style="text-align:center;">Contribution and Results</h3>
 
 在本项目中，我主要负责代码框架的搭建（主要参考[这篇教程](https://github.com/chenyuntc/pytorch-book/blob/master/chapter06-best_practice/PyTorch%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97.md)）、序列拆分和seasonality特征提取的代码实现。
 
@@ -75,10 +75,6 @@ surge特征则是对每一个time bin以2秒为间隔做切分，对每一个分
 | 复现结果   | 0.873     | 0.575  | 0.683 |
   
 </div>
-
-<h2 style="text-align:center;">Summary</h2>
-读代码与自己写代码完全是两回事。读代码可能只需要用十几分钟看看输入输出和中间的几个关键操作就能大概了解一段代码的功能。而当真正需要自己来写这样的代码时，可能需要整整一天。
-
 
 <h3 style="text-align:center;">Acknowledgments</h3>
 感谢石晓楠学姐和吴嘉琦学长在我们论文复现过程中给我们的帮助和指导！
