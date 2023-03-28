@@ -32,10 +32,14 @@ sections:
           tag: '*'
         - name: Deep Learning
           tag: DeepLearning
-        - name: Innovation
-          tag: Innovation
+        - name: Reinforcement Learning
+          tag: ReinforcementLearning
         - name: NLP
           tag: NLP
+        - name: TimeSeries
+          tag: TimeSeries
+        - name: Innovation
+          tag: Innovation
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
