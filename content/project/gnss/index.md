@@ -37,7 +37,7 @@ image:
 
 <h2 style="text-align:center;">Model Framework</h2>
 
-在本项目中，数据同时具有时间特征和空间特征。对于时间特征，每种观测数据都是一条时间序列；对于空间特征，不同GNSS观测站之间存在相对的位置关系。因此模型需要同时对数据的时间特征和空间特征建模。我们主要参考了[这篇论文](https://www.researchgate.net/publication/326205629_GeoMAN_Multi-level_Attention_Networks_for_Geo-sensory_Time_Series_Prediction)提出的深度学习模型，并针对我们的任务目标做了修改，如下图：
+在本项目中，数据同时具有时间特征和空间特征。对于时间特征，每种观测数据都是一条时间序列；对于空间特征，不同GNSS观测站之间存在相对的位置关系。因此模型需要同时**对数据的时间特征和空间特征建模**。我们主要参考了[这篇论文](https://www.researchgate.net/publication/326205629_GeoMAN_Multi-level_Attention_Networks_for_Geo-sensory_Time_Series_Prediction)提出的深度学习模型，并针对任务目标做了修改，如下图：
 
 ![神经网络架构](neural-network-frame.png "神经网络架构")
 
