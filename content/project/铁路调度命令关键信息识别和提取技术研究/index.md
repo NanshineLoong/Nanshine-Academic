@@ -28,8 +28,7 @@ image:
 
 <br/>
 <h2 style="text-align:center;">初窥门径</h2>
-  这是我的第一个深度学习项目。如何入门一个新的领域呢？最经典的办法，是找一本教材从头开始建立知识体系。于是我选中了<a href="https://zh-v2.d2l.ai/index.html">《动手学深度学习》</a>
-[《动手学深度学习》] (https://zh-v2.d2l.ai/index.html) ，并搭配其配套的<a href="[https://zh-v2.d2l.ai/index.html](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497)">网课</a>[网课] (https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497) 。
+  这是我的第一个深度学习项目。如何入门一个新的领域呢？最经典的办法，是找一本教材从头开始建立知识体系。于是我选中了<a href="https://zh-v2.d2l.ai/index.html">《动手学深度学习》</a>，并搭配其配套的<a href="https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497">网课</a>。
 <figure>
   <img src="动手学深度学习.png" alt="《动手学深度学习》" style="zoom:40%" align="middle" />
   <figcaption>《动手学深度学习》</figcaption>
@@ -44,12 +43,12 @@ image:
   <figcaption>Bert-BiLSTM-CRF</figcaption>
 </figure>
 
-我们将调研结果和技术路线等做了总结后申请双创项目，并最终申请到了上海市创新创业项目的立项。
+我们将调研结果和技术路线等做了总结后申请双创项目，并申请到了上海市创新创业项目的立项。
 <br/>
 
 <h2 style="text-align:center;">项目开展</h2>
 
-我们拿到了几万条真实调度命令数据，并对其中2000条做了标注。在github上找到一份合适的代码以后，我先做了一个简单的 **数据预处理**，删除其中一些特殊符号，并将标注数据转换为能被模型读入的BIO标注格式。然后将数据放入模型中做训练和测试，很快得到一个相当不错的结果。
+我们拿到了几万条真实调度命令数据，并对其中2000条做了标注。在github上找到一份合适的代码以后，先做了一个简单的 **数据预处理**，删除其中一些特殊符号，并将标注数据转换为能被模型读入的BIO标注格式。然后将数据放入模型中做训练和测试，很快得到一个相当不错的结果。
 
 <figure>
   <img src="标注结果.png" alt="BIO" style="zoom:30%" align="middle" />
