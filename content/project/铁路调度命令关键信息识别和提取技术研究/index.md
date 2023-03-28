@@ -26,7 +26,7 @@ image:
 > 希望这能让你更了解我走过的历程，同时也希望能给你带去一点小小的启发~
 <\br>
 <h2 style="text-align:center;">初窥门径</h2>
-  这是我的第一个深度学习项目。如何入门一个新的领域呢？最经典的办法，是找一本教材从头开始建立知识体系。于是我选中了 [《动手学深度学习》](https://zh-v2.d2l.ai/index.html)，并搭配其配套的 [网课](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497)。
+  这是我的第一个深度学习项目。如何入门一个新的领域呢？最经典的办法，是找一本教材从头开始建立知识体系。于是我选中了[《动手学深度学习》]([https://www.researchgate.net/publication/326205629_GeoMAN_Multi-level_Attention_Networks_for_Geo-sensory_Time_Series_Prediction](https://zh-v2.d2l.ai/index.html))，并搭配其配套的[网课]([https://www.researchgate.net/publication/326205629_GeoMAN_Multi-level_Attention_Networks_for_Geo-sensory_Time_Series_Prediction](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497))。
 <figure>
   <img src="动手学深度学习.png" alt="《动手学深度学习》" style="zoom:40%" align="middle" />
   <figcaption>《动手学深度学习》</figcaption>
@@ -34,7 +34,7 @@ image:
 <\br>
 
 <h2 style="text-align:center;">项目立项</h2>
-  我找了四位同学组队，开展对这项任务的调研。我们首先将任务划归为NLP领域里的一项基本任务—— **命名实体识别**（**NER**），并决定采用**预训练+微调**的模式来训练模型。我们对NER领域的模型展开进一步调研，并确定使用经典模型**Bert-BiLSTM-CRF**开展实验。
+  我找了四位同学组队，开展对这项任务的调研。我们首先将任务划归为NLP领域里的一项基本任务—— **命名实体识别**（ **NER**），并决定采用 **预训练+微调** 的模式来训练模型。我们对NER领域的模型展开进一步调研，并确定使用经典模型 **Bert-BiLSTM-CRF**开展实验。
 <figure>
   <img src="bert-bilstm-crf.png" alt="bert-bilstm-crf" style="zoom:60%" align="middle" />
   <figcaption>Bert-BiLSTM-CRF</figcaption>
@@ -44,7 +44,7 @@ image:
 <\br>
 
 <h2 style="text-align:center;">项目开展</h2>
-我们拿到了几万条真实调度命令数据，并对其中2000条做了标注。在github上找到一份合适的代码以后，我先做了一个简单的**数据预处理**，删除其中一些特殊符号，并将标注数据转换为能被模型读入的BIO标注格式。然后将数据放入模型中做训练和测试，很快得到一个相当不错的结果。
+我们拿到了几万条真实调度命令数据，并对其中2000条做了标注。在github上找到一份合适的代码以后，我先做了一个简单的 **数据预处理**，删除其中一些特殊符号，并将标注数据转换为能被模型读入的BIO标注格式。然后将数据放入模型中做训练和测试，很快得到一个相当不错的结果。
 <figure>
   <img src="标注结果.png" alt="BIO" style="zoom:30%" align="middle" />
   <figcaption>用BIO标注法标注数据</figcaption>
@@ -55,7 +55,7 @@ image:
   <figcaption>模型在标注数据集上训练后的测试结果</figcaption>
 </figure>
 
-我们任务的关键目标是能在有错误的文本中提取出关键信息，但目前我们的数据中错误是相当少的，不能检验模型对错误信息的识别精度。于是基于老师的描述，我们设计了三条错误生成规则（随机重复一个字、随机删除一个字、随机对两个字做调换）来对原测试数据做**错误数据生成**，模拟实际场景中可能出现的错误。用我们之前训练好的模型在这个错误数据集上测试，发现F1得分有所下降。
+我们任务的关键目标是能在有错误的文本中提取出关键信息，但目前我们的数据中错误是相当少的，不能检验模型对错误信息的识别精度。于是基于老师的描述，我们设计了三条错误生成规则（随机重复一个字、随机删除一个字、随机对两个字做调换）来对原测试数据做 **错误数据生成** ，模拟实际场景中可能出现的错误。用我们之前训练好的模型在这个错误数据集上测试，发现F1得分有所下降。
 
 <figure>
   <img src="实验二.png" alt="实验二结果" style="zoom:100%" align="middle" />
@@ -63,13 +63,13 @@ image:
 </figure>
 
 
-最naive的优化想方法，就是将生成的错误数据和原始数据混在一起以后拿来训练，即**数据增强**。模型通过训练“认识”了这些错误，自然在测试时能有更强的识别错误信息的能力。
+最naive的优化想方法，就是将生成的错误数据和原始数据混在一起以后拿来训练，即 **数据增强** 。模型通过训练“认识”了这些错误，自然在测试时能有更强的识别错误信息的能力。
 <figure>
   <img src="实验三.png" alt="实验三结果" style="zoom:100%" align="middle" />
   <figcaption>经过错误数据训练的模型的测试结果</figcaption>
 </figure>
 
-模型还可以怎么优化呢？还可以在**损失函数**上下功夫。本来模型中的损失是直接通过CRF层计算的，我们可以另外加入一个损失函数来进一步调整模型训练的方向，比如center loss。centor loss能学习每种标签的中心来提高对每个token的特征表示能力，从而提高其分类准确度。通过对模型中间层的输出结果做**t-sne可视化**，可以比较加了center loss与没加的区别。
+模型还可以怎么优化呢？还可以在 **损失函数** 上下功夫。本来模型中的损失是直接通过CRF层计算的，我们可以另外加入一个损失函数来进一步调整模型训练的方向，比如center loss。centor loss能学习每种标签的中心来提高对每个token的特征表示能力，从而提高其分类准确度。通过对模型中间层的输出结果做 **t-sne可视化** ，可以比较加了center loss与没加的区别。
 <figure>
   <img src="tsne.png" alt="tsne可视化结果" style="zoom:60%" align="middle" />
   <figcaption>左边没有加入center loss，右边加入了center loss</figcaption>
