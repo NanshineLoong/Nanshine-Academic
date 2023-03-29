@@ -57,7 +57,7 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Please feel free to contact me if you have any questions, or even if you just want to make a friend~
+        Feel free to contact me if you have any questions, or even if you just want to make a friend~
       # Contact (add or remove contact options as necessary)
       email: 2053495@tongji.edu.cn
       phone: 155 7438 3908
