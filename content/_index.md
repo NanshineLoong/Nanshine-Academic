@@ -57,20 +57,20 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Feel free to contact me if you have any questions, or even if you just want to make a friend~
+        Feel free to contact me! 
       # Contact (add or remove contact options as necessary)
       email: 2053495@tongji.edu.cn
       phone: 155 7438 3908
       # Automatically link email and phone or display as text?
       autolink: true
       # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
+      # form:
+      #   provider: netlify
+      #   formspree:
+      #     id:
+      #   netlify:
           # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
+      #     captcha: false
     design:
       columns: '2'
 ---
