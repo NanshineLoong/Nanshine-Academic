@@ -33,4 +33,4 @@ highlight_name: true
 first_name: Zhuohan
 email: ""
 ---
-I am an undergraduate student in the School of Software Engineering(SSE), Tongji University. I am not a classic software engineering student that major in producing a software. Actually, I am more like a student majoring in AI. I have tried some projects which focuses on AI's application  during my undergraduate student time, including NLP, Time Series, Reinforcement Learing. You can see more details in the projects part.
+I am an undergraduate student in the School of Software Engineering(SSE), Tongji University. I'm not a typical software engineering student who specializes in developing software. Instead, I have pursued a major in AI and have completed several projects focused on the application of AI during my undergraduate studies, including areas such as NLP, time series analysis, and reinforcement learning. You can find more information about these projects in the Projects section.
